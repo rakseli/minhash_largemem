@@ -200,7 +200,7 @@ if __name__ == "__main__":
     logging.info(f"N of CPUs used for data loading and processing: {num_cpus}")
     #dedup corpus per language
     t = Timer()
-    out_dir = args.out_dir
+    out_dir = args.output_dir
     if not os.path.exists(out_dir):
         os.mkdir(out_dir)
     lang = args.lang
